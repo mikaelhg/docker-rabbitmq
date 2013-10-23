@@ -19,4 +19,6 @@ Here we persistently save our data to the host machine's ``/tmp/rabbitmq/mnesia`
 
     mkdir -p /tmp/rabbitmq/mnesia
     chmod 777 /tmp/rabbitmq/mnesia
-    sudo docker run -p :5672 -p :15672 -v /tmp/rabbitmq/mnesia:/var/lib/rabbitmq/mnesia mikaelhg/rabbitmq
+    sudo docker run -h rabbithost -p :5672 -p :15672 -v /tmp/rabbitmq/mnesia:/var/lib/rabbitmq/mnesia mikaelhg/rabbitmq
+
+Since RabbitMQ uses the ``$HOSTNAME`` in its data path, we need to explicitly set it for the container.
