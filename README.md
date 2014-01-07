@@ -6,7 +6,7 @@ http://www.rabbitmq.com/install-debian.html
 
 ### To build:
 
-    sudo docker build https://github.com/mikaelhg/docker-rabbitmq.git
+    sudo docker build github.com/mikaelhg/docker-rabbitmq.git
 
 ### To run:
 
