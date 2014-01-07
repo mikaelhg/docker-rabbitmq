@@ -25,6 +25,6 @@ RUN apt-get -qq update > /dev/null
 RUN apt-get -qq -y install rabbitmq-server > /dev/null
 RUN /usr/sbin/rabbitmq-plugins enable rabbitmq_management
 
-EXPOSE 5672 15672
+EXPOSE 5672 15672 4369
 
 CMD /usr/sbin/rabbitmq-server
