@@ -35,8 +35,9 @@ Since RabbitMQ uses the ``$HOSTNAME`` in its data path, we need to explicitly se
                   Starting broker... completed with 6 plugins.
 
 ### To run in Vagrant VM:
-  #### Install virtualbox from https://www.virtualbox.org/ (or use your package manager)
-  #### Install vagrant from http://www.vagrantup.com/ (or use your package manager)
-  #### Clone this project with git
-  #### Run : Vagrant up
-  #### Open RabbitMQ Management Console from your browser: http://192.168.33.10:49153/#/
+
+    Install virtualbox from https://www.virtualbox.org/ (or use your package manager)
+    Install vagrant from http://www.vagrantup.com/ (or use your package manager)
+    Clone this project with git
+    Run : Vagrant up
+    Open RabbitMQ Management Console from your browser: http://192.168.33.10:49153/#/
