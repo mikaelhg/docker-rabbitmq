@@ -36,8 +36,12 @@ Since RabbitMQ uses the ``$HOSTNAME`` in its data path, we need to explicitly se
 
 ### To run in Vagrant VM:
 
-    Install virtualbox from https://www.virtualbox.org/ (or use your package manager)
-    Install vagrant from http://www.vagrantup.com/ (or use your package manager)
-    Clone this project with git
-    Run : vagrant up
-    Open RabbitMQ Management Console from your browser: http://192.168.33.10:49153/#/
+1. Install virtualbox from https://www.virtualbox.org/ (or use your package manager)
+
+2. Install vagrant from http://www.vagrantup.com/ (or use your package manager)
+
+3. Clone this project with git
+
+4. Run : ``vagrant up``
+
+5. Open RabbitMQ Management Console from your browser: http://192.168.33.10:49153/
