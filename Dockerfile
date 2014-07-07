@@ -2,18 +2,8 @@
 #
 # VERSION               0.0.1
 
-FROM      ubuntu:12.04
+FROM      ubuntu:14.04
 MAINTAINER Mikael Gueck "gumi@iki.fi"
-
-# Make sure that Upstart won't try to start RabbitMQ after apt-get installs it
-# https://github.com/dotcloud/docker/issues/446
-ADD policy-rc.d /usr/sbin/policy-rc.d
-RUN /bin/chmod 755 /usr/sbin/policy-rc.d
-
-# Another way to work around Upstart problems
-# https://www.nesono.com/node/368
-# RUN dpkg-divert --local --rename --add /sbin/initctl
-# RUN ln -s /bin/true /sbin/initctl
 
 ENV DEBIAN_FRONTEND noninteractive
 
