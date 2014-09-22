@@ -32,6 +32,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision "docker" do |d|
     d.pull_images "mikaelhg/docker-rabbitmq"
     d.run "mikaelhg/docker-rabbitmq",
-      args: "-h rabbithost -p :5672 -p :15672"
+      args: "-h rabbithost -p 0.0.0.0:5672:5672 -p 0.0.0.0:15672:15672"
   end
 end
